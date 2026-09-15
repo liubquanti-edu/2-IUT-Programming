@@ -1,0 +1,89 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Diagramme de classes" id="diag1">
+    <mxGraphModel dx="465" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sys" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;swimlaneFillColor=#ffffff;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="SystemeMessagerie" vertex="1">
+          <mxGeometry height="212" width="300" x="260" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sys_sep1" parent="sys" style="line;strokeColor=#6c8ebf;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sys_a1" parent="sys" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="- utilisateurs: List&lt;Utilisateur&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="sys_a2" parent="sys" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="- messages: List&lt;Message&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="sys_sep2" parent="sys" style="line;strokeColor=#6c8ebf;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sys_m1" parent="sys" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="+ inscrire(nom, prenom, email): Utilisateur" vertex="1">
+          <mxGeometry height="26" width="300" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="sys_m2" parent="sys" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="+ envoyerMessage(exp, dest, contenu): void" vertex="1">
+          <mxGeometry height="26" width="300" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="sys_m3" parent="sys" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="+ rechercherUtilisateurs(nom, prenom): List&lt;Utilisateur&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="sys_m4" parent="sys" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="+ consulterMessages(utilisateur): List&lt;Message&gt;" vertex="1">
+          <mxGeometry height="26" width="300" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="user" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;swimlaneFillColor=#ffffff;fillColor=#d5e8d4;strokeColor=#82b366;" value="Utilisateur" vertex="1">
+          <mxGeometry height="142" width="220" x="60" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="user_sep1" parent="user" style="line;strokeColor=#82b366;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="user_a1" parent="user" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="- numero: int" vertex="1">
+          <mxGeometry height="26" width="220" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="user_a2" parent="user" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="- nom: String" vertex="1">
+          <mxGeometry height="26" width="220" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="user_a3" parent="user" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="- prenom: String" vertex="1">
+          <mxGeometry height="26" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="user_a4" parent="user" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="- email: String" vertex="1">
+          <mxGeometry height="26" width="220" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="msg" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;swimlaneFillColor=#ffffff;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Message" vertex="1">
+          <mxGeometry height="142" width="240" x="520" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_sep1" parent="msg" style="line;strokeColor=#d79b00;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_a1" parent="msg" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="- expediteur: Utilisateur" vertex="1">
+          <mxGeometry height="26" width="240" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_a2" parent="msg" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="- destinataire: Utilisateur" vertex="1">
+          <mxGeometry height="26" width="240" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_a3" parent="msg" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="- contenu: String" vertex="1">
+          <mxGeometry height="26" width="240" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_a4" parent="msg" style="text;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;html=1;" value="- dateEnvoi: String" vertex="1">
+          <mxGeometry height="26" width="240" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="sys" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERoneToMany;startArrow=ERone;fontSize=11;startFill=0;endFill=0;" target="user" value="gere">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="sys" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERoneToMany;startArrow=ERone;fontSize=11;startFill=0;endFill=0;" target="msg" value="gere">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="msg" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERone;startArrow=ERoneToMany;fontSize=11;exitX=0;exitY=0.3;exitDx=0;exitDy=0;entryX=1;entryY=0.3;entryDx=0;entryDy=0;startFill=0;endFill=0;" target="user" value="expediteur">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="msg" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERone;startArrow=ERoneToMany;fontSize=11;exitX=0;exitY=0.7;exitDx=0;exitDy=0;entryX=1;entryY=0.7;entryDx=0;entryDy=0;startFill=0;endFill=0;" target="user" value="destinataire">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
