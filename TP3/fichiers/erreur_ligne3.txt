@@ -1,0 +1,5 @@
+TEMPERATURE;T01;Salle A;true;21.5
+LUMINOSITE;L01;Hall;true;650
+TEMPERATURE;T02;Salle B;true;erreur
+PRESENCE;P01;Salle C;true;true
+TEMPERATURE;T03;Salle D;true;22.0
